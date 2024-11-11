@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_Rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+
+
+    android:background="@drawable/reybg1"
+    android:elevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+
+        android:layout_height="67sp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lnr1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/personicon" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/lnr3"
+            app:layout_constraintStart_toEndOf="@+id/lnr1">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:autoSizeMaxTextSize="15dp"
+                android:autoSizeMinTextSize="12dp"
+                android:fontFamily="@font/semibold"
+                android:text="Syed P"
+                android:textFontWeight="600"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/demibold"
+                    android:text="Consumer no. "
+                    android:textColor="#191206"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txt_consumer_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/medium"
+                    android:gravity="fill"
+                    android:text="263839"
+                    android:textColor="#191206"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imv_location"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/navigationicon" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

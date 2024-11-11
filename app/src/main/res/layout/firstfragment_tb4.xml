@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.skydoves.elasticviews.ElasticLayout
+
+        android:id="@+id/statement"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_height="75dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:background="@drawable/homebackgroung2"
+            android:backgroundTint="@color/primaryColor2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/sub4_lnr"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@drawable/front_statement"
+                    android:layout_margin="16dp"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@+id/sub4_lnr"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/demibold"
+                        android:textSize="15sp"
+                        android:textColor="@color/primaryColor"
+                        android:layout_gravity="center|left"
+                        android:text="Statement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:fontFamily="@font/medium"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="13sp"
+                        android:layout_gravity="center|left"
+                        android:text="Find your billing and reading statement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.skydoves.elasticviews.ElasticLayout>
+
+
+
+    <com.skydoves.elasticviews.ElasticLayout
+        android:layout_marginTop="12dp"
+         android:id="@+id/pending"
+
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_height="75dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:background="@drawable/homebackgroung2"
+            android:backgroundTint="@color/primaryColor2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/sub4_lnr2"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@drawable/front_pending"
+                    android:layout_margin="16dp"
+                    android:layout_width="30dp"
+                    android:layout_height="33dp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@+id/sub4_lnr2"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/demibold"
+                        android:textSize="15sp"
+                        android:textColor="@color/primaryColor"
+                        android:layout_gravity="center|left"
+                        android:text="Pending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/medium"
+                        android:layout_gravity="center|left"
+                        android:text="Find your billing and reading pending report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.skydoves.elasticviews.ElasticLayout>
+
+
+</LinearLayout>

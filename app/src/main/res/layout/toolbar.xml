@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/primaryColor"
+    android:layout_height="?actionBarSize">
+    
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/goback"
+            android:src="@drawable/goback"
+            android:layout_width="19dp"
+            android:layout_height="19.03dp"/>
+
+        
+        
+    </LinearLayout>
+
+</Toolbar>

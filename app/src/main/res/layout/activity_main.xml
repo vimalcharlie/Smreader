@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_rl"
+    android:orientation="vertical"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="NULL"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/bottom_bar"
+        android:transitionName="istrans"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:abb_textAppearance="@style/label"
+        android:background="#EDEAEA"
+        app:abb_rippleEnabled="true"
+        app:abb_tabColorSelected="#000000"
+
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorHeight="3dp"
+        app:abb_indicatorMargin="20dp"
+        app:abb_selectedIndex="1"
+        app:abb_selectedTabType="text"
+
+
+        app:abb_tabs="@menu/tabs"
+        app:layout_constraintBottom_toBottomOf="@+id/viewpager" />
+
+</LinearLayout>

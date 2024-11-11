@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="103dp">
+               <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <com.example.newsmreader.frontScreens.progressBar.RoundProgressBar
+                       app:endprogresscolor="@android:color/transparent"
+                       android:id="@+id/roundProgressBar1"
+                       android:layout_width="match_parent"
+
+                       app:progress="0"
+                       app:progresscolor="#5BCAA5"
+                       app:strokewidth="10dp"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:layout_height="match_parent">
+
+
+
+
+
+                   </com.example.newsmreader.frontScreens.progressBar.RoundProgressBar>
+
+
+
+
+               </androidx.coordinatorlayout.widget.CoordinatorLayout>
+               <LinearLayout
+                   android:layout_marginBottom="6dp"
+                   android:orientation="vertical"
+                   android:gravity="center"
+
+                   android:layout_alignParentBottom="true"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/txt_per1"
+
+                       android:layout_marginBottom="13dp"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="0%"
+                       android:textColor="@android:color/black"
+                       android:textSize="20sp"
+                       />
+
+
+
+
+
+
+                   <TextView
+                       android:id="@+id/min_txt_one"
+                       android:paddingLeft="12dp"
+                       android:paddingRight="12dp"
+                       android:background="@drawable/progressiconbg"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="₹0" />
+               </LinearLayout>
+
+
+
+           </RelativeLayout>
+           <TextView
+               android:gravity="center"
+               android:textSize="13sp"
+               android:lineSpacingExtra="2dp"
+               android:text="Collection of\nthe day"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_marginLeft="10dp"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="103dp">
+               <androidx.coordinatorlayout.widget.CoordinatorLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <com.example.newsmreader.frontScreens.progressBar.RoundProgressBar
+                       app:endprogresscolor="@android:color/transparent"
+                       android:id="@+id/roundProgressBar2"
+                       android:layout_width="match_parent"
+                       app:progress="0"
+                       app:progresscolor="#EDC67C"
+                       app:strokewidth="10dp"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:layout_height="match_parent">
+
+
+
+
+
+                   </com.example.newsmreader.frontScreens.progressBar.RoundProgressBar>
+
+
+
+
+               </androidx.coordinatorlayout.widget.CoordinatorLayout>
+               <LinearLayout
+                   android:layout_marginBottom="6dp"
+                   android:orientation="vertical"
+                   android:gravity="center"
+
+                   android:layout_alignParentBottom="true"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/txt_per2"
+                       android:layout_marginBottom="13dp"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="0%"
+                       android:textColor="@android:color/black"
+                       android:textSize="20sp"
+                       />
+
+
+
+
+
+
+                   <TextView
+                       android:id="@+id/min_txt_two"
+                       android:paddingLeft="12dp"
+                       android:paddingRight="12dp"
+                       android:background="@drawable/progressiconbg"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                        android:text="0" />
+               </LinearLayout>
+
+
+
+           </RelativeLayout>
+           <TextView
+               android:gravity="center"
+               android:textSize="13sp"
+               android:lineSpacingExtra="2dp"
+               android:text="Reading of\nthe month"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginLeft="10dp"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="101dp">
+               <androidx.coordinatorlayout.widget.CoordinatorLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               <com.example.newsmreader.frontScreens.progressBar.RoundProgressBar
+                   app:endprogresscolor="@android:color/transparent"
+                  android:id="@+id/roundProgressBar"
+                   android:layout_width="match_parent"
+                   app:progress="0"
+                   app:progresscolor="#EE7771"
+                   app:strokewidth="10dp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+
+                   android:layout_height="match_parent">
+
+
+
+
+
+               </com.example.newsmreader.frontScreens.progressBar.RoundProgressBar>
+
+
+
+
+               </androidx.coordinatorlayout.widget.CoordinatorLayout>
+               <LinearLayout
+                   android:layout_marginBottom="6dp"
+                   android:orientation="vertical"
+                   android:gravity="center"
+
+                   android:layout_alignParentBottom="true"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/txt_per3"
+                       android:layout_marginBottom="13dp"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="0%"
+                       android:textColor="@android:color/black"
+                       android:textSize="20sp"
+                       />
+
+
+
+
+
+
+                   <TextView
+                       android:id="@+id/min_txt_three"
+                       android:paddingLeft="12dp"
+                       android:paddingRight="12dp"
+                       android:background="@drawable/progressiconbg"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="0" />
+               </LinearLayout>
+
+
+
+           </RelativeLayout>
+           <TextView
+               android:gravity="center"
+               android:textSize="13sp"
+               android:lineSpacingExtra="2dp"
+               android:text="Billing of\nthe day"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+
+
+
+       </LinearLayout>
+       
+       
+       
+       
+       
+       
+       
+   </LinearLayout>
+    
+    
+    
+    
+    
+
+</LinearLayout>

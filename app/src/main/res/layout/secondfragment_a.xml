@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/primaryColor2"
+    android:layout_width="match_parent"
+    android:id="@+id/root_rl"
+    android:layout_height="match_parent">
+    <Toolbar
+        android:background="@color/primaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <LinearLayout
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgclick"
+                android:layout_width="34dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/baseline_backup_24"
+                android:visibility="visible" />
+            
+            
+        </LinearLayout>
+        
+        
+        
+        
+    </Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginTop="22dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/black"
+            android:fontFamily="@font/demibold"
+            android:textSize="16sp"
+            android:text="Select Printer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reyview"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlt"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd1"
+
+                app:cardCornerRadius="12dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                         <TextView
+                             android:fontFamily="@font/demibold"
+                             android:textSize="18sp"
+                             android:text="Export"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                          <TextView
+                              android:fontFamily="@font/medium"
+                              android:textColor="#6D6D6D"
+                              android:text="Last import was on "
+
+                              android:layout_width="wrap_content"
+                              android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:fontFamily="@font/normal"
+                                android:id="@+id/importdate"
+                                android:textColor="#6D6D6D"
+                                android:text="12/01/2022"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="1dp"
+                            android:background="#33000000"
+                            android:clickable="false" />
+
+
+                        <LinearLayout
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+
+                                android:src="@drawable/settingreadingicon"
+                                android:layout_width="23.67447dp"
+                                android:layout_height="16dp"/>
+                        <TextView
+                            android:fontFamily="@font/normal"
+                            android:layout_marginLeft="8dp"
+                            android:text="Reading Count"
+                            android:textSize="13sp"
+                            android:textColor="#6D6D6D"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:fontFamily="@font/demibold"
+                                    android:id="@+id/txt_readCount"
+                                    android:layout_marginRight="8dp"
+                                    android:textSize="16sp"
+                                    android:text="367"
+                                    android:textColor="#000000"
+                                   android:layout_alignParentEnd="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+                        <View
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="1dp"
+                            android:background="#33000000"
+                            android:clickable="false" />
+                        <LinearLayout
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/settingbillgicon"
+                                android:layout_width="14dp"
+                                android:layout_height="21dp"/>
+                            <TextView
+                                android:fontFamily="@font/normal"
+                                android:layout_marginLeft="16dp"
+                                android:text="Billing Count"
+                                android:textSize="13sp"
+                                android:textColor="#6D6D6D"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txt_billCount"                                    android:layout_marginRight="8dp"
+                                    android:textSize="16sp"
+                                    android:text="367"
+                                    android:fontFamily="@font/demibold"
+                                    android:textColor="#000000"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:id="@+id/export_bt"
+                            android:layout_marginTop="19dp"
+                            android:text="Eport"
+                            android:textColor="@color/white"
+
+                           
+                            android:background="@drawable/all_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp">
+
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            
+                            <ImageView
+                                android:src="@drawable/settingexporticon"
+                                android:layout_width="14dp"
+                                android:layout_height="12dp"/>
+                            <TextView
+                                android:fontFamily="@font/semibold"
+                                android:layout_marginLeft="6dp"
+                                android:textSize="15sp"
+                                android:textColor="#ffffff"
+                                android:text="Export"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            
+                        </LinearLayout>
+
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_below="@+id/crd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/medium"
+                    android:layout_marginTop="4dp"
+                    android:textSize="17sp"
+                    android:text="@string/appversionname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txt_click"
+                    android:fontFamily="@font/light"
+                    android:layout_marginTop="4dp"
+                   android:drawableTint="#0052EE"
+                    android:drawableRight="@drawable/signoutarrow"
+                    android:textColor="#0052EE"
+                    android:text="About the version   "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

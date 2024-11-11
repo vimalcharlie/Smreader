@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor2"
+    tools:context=".reading.ReadProfile">
+
+    <LinearLayout
+        android:id="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/toolbar"/>
+        <requestFocus />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:src="@drawable/user"
+                                android:id="@+id/imv"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+
+                            <TextView
+                                android:fontFamily="@font/demibold"
+                                android:id="@+id/txt_name"
+                                android:textSize="15sp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/imv"
+                                android:text="Syed P"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+
+
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/profilephone"
+                                    android:id="@+id/imv1"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"/>
+
+                                <TextView
+
+                                    android:fontFamily="@font/regular"
+                                    android:layout_marginLeft="8dp"
+                                    android:id="@+id/txtphone"
+                                    android:textSize="13sp"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+                                    app:layout_constraintStart_toEndOf="@id/imv1"
+                                    android:text="Phone number"
+                                    android:textColor="#80000000"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <ImageView
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    android:src="@drawable/editicon"
+                                    android:id="@+id/editimv1"
+
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"/>
+
+                                <EditText
+                                    android:fontFamily="@font/demibold"
+
+                                    android:background="@android:color/transparent"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:id="@+id/Et_phone2"
+                                    android:textSize="15sp"
+
+                                    app:layout_constraintTop_toBottomOf="@+id/txtphone"
+                                    app:layout_constraintStart_toEndOf="@id/imv1"
+                                    android:text="7878653789"
+                                    android:textColor="#000000"
+
+                                    android:layout_width="wrap_content"
+                                    android:minWidth="70dp"
+                                    android:inputType="phone"
+                                    android:digits="0123456789"
+                                    android:layout_height="wrap_content">
+
+
+
+                                </EditText>
+
+                                <View
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/imv1"
+                                    app:layout_constraintTop_toBottomOf="@+id/Et_phone2"
+                                    android:layout_width="match_parent"
+                                    android:background="#33000000"
+                                    android:layout_height="1dp"/>
+
+
+
+
+
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_marginTop="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/profileaddress"
+                                    android:id="@+id/imvadd"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"/>
+
+
+                                <TextView
+                                    android:fontFamily="@font/regular"
+                                    android:id="@+id/txtaddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+
+                                    android:layout_marginTop="12dp"
+                                    android:text="Address"
+                                    android:textColor="#80000000"
+
+                                    android:textSize="13sp"
+                                    app:layout_constraintStart_toEndOf="@id/imvadd"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:id="@+id/txtaddress2"
+                                    android:textSize="15sp"
+                                    android:fontFamily="@font/demibold"
+                                    app:layout_constraintTop_toBottomOf="@+id/txtaddress"
+                                    app:layout_constraintStart_toEndOf="@id/imvadd"
+                                    android:text="National Highway 66 near Calicut University Kakkanchery Chelembra PO, Dt, Thenhipalam, Kerala 673634"
+                                    android:textColor="#000000"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <View
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/imvadd"
+                                    app:layout_constraintTop_toBottomOf="@+id/txtaddress2"
+                                    android:layout_width="match_parent"
+                                    android:background="#33000000"
+                                    android:layout_height="1dp"/>
+
+
+
+
+
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_marginTop="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/profilearea"
+                                    android:id="@+id/imvarea"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"/>
+
+                                <TextView
+                                    android:fontFamily="@font/regular"
+                                    android:layout_marginLeft="8dp"
+                                    android:id="@+id/txtarea"
+                                    android:textSize="13sp"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+                                    app:layout_constraintStart_toEndOf="@id/imvarea"
+                                    android:text="Area"
+                                    android:textColor="#80000000"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+
+                                <TextView
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:id="@+id/txtarea2"
+                                    android:textSize="15sp"
+                                    android:fontFamily="@font/demibold"
+                                    app:layout_constraintTop_toBottomOf="@+id/txtarea"
+                                    app:layout_constraintStart_toEndOf="@id/imvarea"
+                                    android:text="Thennala"
+                                    android:textColor="#000000"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/profilemeter_reading"
+                            android:id="@+id/imvreader"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_width="18dp"
+                            android:layout_height="15.165dp"/>
+
+                        <TextView
+                            android:fontFamily="@font/regular"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="#80000000"
+                            android:textSize="13sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imvreader"
+                            android:text="Meter no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+
+                        <ImageView
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/editicon"
+                            android:id="@+id/editimv"
+
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"/>
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_marginLeft="24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <EditText
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="8dp"
+                            android:id="@+id/txtmeterreading"
+                            android:textSize="15sp"
+                             android:inputType="number"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text=""
+                            android:textColor="#000000"
+
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <View
+                            android:id="@+id/iv1"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtmeterreading"
+                            android:layout_width="match_parent"
+                            android:background="#33000000"
+                            android:layout_height="1dp"/>
+
+                        <TextView
+                            android:fontFamily="@font/regular"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="8dp"
+                            android:id="@+id/txtprebill"
+                            android:textSize="13sp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/iv1"
+                            android:text="Previous Balance"
+                            android:textColor="#80000000"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="8dp"
+                            android:id="@+id/txtpreread"
+                            android:textSize="15sp"
+
+                            android:fontFamily="@font/demibold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtprebill"
+                            android:text="263839"
+                            android:textColor="#000000"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <View
+                            android:id="@+id/iv2"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtpreread"
+                            android:layout_width="match_parent"
+                            android:background="#33000000"
+                            android:layout_height="1dp"/>
+
+
+
+
+
+
+
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="8dp"
+                            android:id="@+id/txtlastreaddate"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/regular"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/iv2"
+                            android:text="Last reading date"
+                            android:textColor="#80000000"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="8dp"
+                            android:id="@+id/txtlastreaddate2"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/demibold"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtlastreaddate"
+                            android:text="10/01/2023"
+                            android:textColor="#000000"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <View
+                            android:id="@+id/iv3"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtlastreaddate2"
+                            android:layout_width="match_parent"
+                            android:background="#33000000"
+                            android:layout_height="1dp"/>
+
+
+
+
+
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="8dp"
+                            android:id="@+id/txtlastbilldate"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/regular"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/iv3"
+                            android:text="Last billed date"
+                            android:textColor="#80000000"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="8dp"
+                            android:id="@+id/txtlastbilldate2"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/demibold"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtlastbilldate"
+                            android:text="10/01/2023"
+                            android:textColor="#000000"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="85dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.skydoves.elasticviews.ElasticButton
+            android:fontFamily="@font/semibold"
+            android:onClick="nextpage"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/all_button"
+            android:layout_width="match_parent"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:layout_height="48dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

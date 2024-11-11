@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+    <com.skydoves.elasticviews.ElasticLayout
+        android:elevation="5dp"
+        android:id="@+id/readingPage"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+
+        android:layout_height="115dp">
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/homebackgroung2"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/front_reading"
+                android:layout_width="45.869dp"
+                android:layout_height="31dp"/>
+            <TextView
+                android:fontFamily="@font/demibold"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:lineSpacingExtra="2dp"
+                android:text="Start\nReading"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </com.skydoves.elasticviews.ElasticLayout>
+
+
+    <com.skydoves.elasticviews.ElasticLayout
+        android:id="@+id/billpage"
+        android:elevation="5dp"
+        android:layout_width="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:gravity="center"
+        android:background="@drawable/homebackgroung2"
+        android:backgroundTint="@color/primaryColor2"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/front_billing"
+            android:layout_width="45.869dp"
+            android:layout_height="31dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/primaryColor"
+            android:textSize="13sp"
+            android:fontFamily="@font/demibold"
+            android:lineSpacingExtra="2dp"
+            android:text="Bill your\ncustomer"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+    </com.skydoves.elasticviews.ElasticLayout>
+
+
+    <com.skydoves.elasticviews.ElasticLayout
+        android:id="@+id/add_complaint"
+        android:elevation="5dp"
+        android:layout_width="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:gravity="center"
+        android:background="@drawable/homebackgroung2"
+        android:backgroundTint="@color/primaryColor2"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/front_registration"
+            android:layout_width="45.869dp"
+            android:layout_height="31dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/primaryColor"
+            android:lineSpacingExtra="2dp"
+            android:fontFamily="@font/demibold"
+            android:textSize="13sp"
+                android:text="Register\nComplaint"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    </com.skydoves.elasticviews.ElasticLayout>
+
+
+</LinearLayout>
